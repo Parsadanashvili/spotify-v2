@@ -3,6 +3,7 @@ import { createSlice } from '@reduxjs/toolkit'
 const initialState = {
     track: {},
     isPlaying: false,
+    isShuffled: false,
 }
 
 const songSlice = createSlice({
@@ -14,6 +15,9 @@ const songSlice = createSlice({
         },
         togglePlay(state, action) {
             state.isPlaying = !!action.payload;
+        },
+        toggleShuffle(state, action) {
+            state.isShuffled = !!action.payload;
         },
     },
 })

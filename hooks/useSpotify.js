@@ -1,4 +1,4 @@
-import {signIn, signOut, useSession} from "next-auth/react";
+import {signIn, useSession} from "next-auth/react";
 import {useEffect} from "react";
 import SpotifyWebApi from "spotify-web-api-node";
 
